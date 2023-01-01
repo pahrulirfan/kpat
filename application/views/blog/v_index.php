@@ -20,7 +20,7 @@
 			<th>Judul</th>
 			<th>Isi</th>
 			<th>Penulis</th>
-			<th>Aksi</th>
+			<th width="120px">Aksi</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -34,8 +34,8 @@
 				<td><?php echo $item->isi; ?></td>
 				<td><?php echo $item->penulis; ?></td>
 				<td>
-					<a href="<?= site_url('blog/hapus/' . $item->id) ?>" class="btn btn-danger">Del</a>
-					<a href="<?= site_url('blog/edit/' . $item->id) ?>" class="btn btn-warning">Edit</a>
+					<a href="<?= site_url('blog/hapus/' . $item->id) ?>" onclick="return confirm('Anda Yakin ?')" class="btn btn-sm btn-danger">Del</a>
+					<a href="<?= site_url('blog/edit/' . $item->id) ?>" class="btn btn-sm btn-warning">Edit</a>
 				</td>
 			</tr>
 			<?php
