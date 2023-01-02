@@ -16,7 +16,7 @@
 		<div class="col-md-4">
 			<div class="card">
 				<div class="card-body">
-					<form action="<?=site_url('login/poses_login')?>" method="post">
+					<form action="<?=site_url('login/proses_login')?>" method="post">
 						<div class="mb-3">
 							<label for="">Username</label>
 							<input type="text" name="txtusername" class="form-control">
